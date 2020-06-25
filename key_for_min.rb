@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   name_hash_sorted = name_hash.sort
-  name_hash_sorted do |key, pair|
-    puts key[0]
+  name_hash_sorted do |x, y|
+    puts x[0]
   end
 end
