@@ -5,5 +5,9 @@ def key_for_min_value(name_hash)
   output = ""
   i = 0
   name_hash.collect do |x, y|
-    if y < i    
+    if y[i] < y[i+1]
+    output << x
+    i += 1
+  end
+  output
 end
